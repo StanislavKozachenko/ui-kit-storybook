@@ -14,7 +14,15 @@ export default defineConfig({
   test: {
     coverage: {
       provider: "v8",
-      reporter: ["text", "json", "html"]
+      reporter: ["text", "json", "html"],
+      include: ["src/components/**/*.tsx"],
+      exclude: ["src/components/**/*.stories.tsx", "src/components/**/*.test.tsx"],
+      thresholds: {
+        statements: 90,
+        branches: 70,
+        functions: 90,
+        lines: 90
+      }
     },
     projects: [{
       extends: true,
