@@ -1,7 +1,7 @@
 {
   "name": "ui-kit-storybook",
   "version": "1.0.1",
-  "description": "",
+  "description": "Мини UI-Kit (Button, Input) на shadcn/ui и Tailwind CSS v4 с документацией в Storybook",
   "type": "module",
   "scripts": {
     "build": "tsup && npm run build:css",
@@ -15,8 +15,8 @@
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ui-kit", "react", "tailwindcss", "shadcn", "storybook"],
+  "author": "Stanislav Kozachenko <sk@qulix.com>",
   "license": "ISC",
   "sideEffects": false,
   "files": [
